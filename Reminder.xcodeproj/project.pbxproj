@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69C5D96E285F3C7D00EEC32C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5D96D285F3C7D00EEC32C /* AppDelegate.swift */; };
+		69C5D970285F3C7D00EEC32C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5D96F285F3C7D00EEC32C /* SceneDelegate.swift */; };
+		69C5D972285F3C7D00EEC32C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5D971285F3C7D00EEC32C /* WelcomeViewController.swift */; };
+		69C5D977285F3C7E00EEC32C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69C5D976285F3C7E00EEC32C /* Assets.xcassets */; };
+		69C5D97A285F3C7E00EEC32C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69C5D978285F3C7E00EEC32C /* LaunchScreen.storyboard */; };
+		69C5D983285F3E1A00EEC32C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 69C5D982285F3E1A00EEC32C /* SnapKit */; };
+		69C5D987285F3F0400EEC32C /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5D986285F3F0400EEC32C /* Color+Ext.swift */; };
+		69C5D98F285F401100EEC32C /* Teko-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C5D98A285F401100EEC32C /* Teko-Medium.ttf */; };
+		69C5D990285F401100EEC32C /* Teko-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C5D98B285F401100EEC32C /* Teko-Light.ttf */; };
+		69C5D991285F401100EEC32C /* Teko-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C5D98C285F401100EEC32C /* Teko-SemiBold.ttf */; };
+		69C5D992285F401100EEC32C /* Teko-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C5D98D285F401100EEC32C /* Teko-Regular.ttf */; };
+		69C5D993285F401100EEC32C /* Teko-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69C5D98E285F401100EEC32C /* Teko-Bold.ttf */; };
+		69C5D995285F431000EEC32C /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5D994285F431000EEC32C /* Font+Ext.swift */; };
+		69C5D997285F455A00EEC32C /* MyRemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5D996285F455900EEC32C /* MyRemindersViewController.swift */; };
+		69C5D99C285F4A9800EEC32C /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5D99B285F4A9800EEC32C /* ReminderCell.swift */; };
+		69C5D99E285F56EE00EEC32C /* ReminderCellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5D99D285F56EE00EEC32C /* ReminderCellHeader.swift */; };
+		69C5D9A3285F5C5E00EEC32C /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5D9A2285F5C5E00EEC32C /* Reminder.swift */; };
+		69C5D9A5285F5C7A00EEC32C /* MyRemindersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5D9A4285F5C7A00EEC32C /* MyRemindersViewModel.swift */; };
+		69C5D9A8285F6BD900EEC32C /* CreateReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5D9A7285F6BD900EEC32C /* CreateReminderViewController.swift */; };
+		69F2E7F028627719008BEA2E /* Calendar+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F2E7EF28627719008BEA2E /* Calendar+Ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		69C5D96A285F3C7D00EEC32C /* Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69C5D96D285F3C7D00EEC32C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69C5D96F285F3C7D00EEC32C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		69C5D971285F3C7D00EEC32C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		69C5D976285F3C7E00EEC32C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69C5D979285F3C7E00EEC32C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69C5D97B285F3C7E00EEC32C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69C5D986285F3F0400EEC32C /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		69C5D98A285F401100EEC32C /* Teko-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Medium.ttf"; sourceTree = "<group>"; };
+		69C5D98B285F401100EEC32C /* Teko-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Light.ttf"; sourceTree = "<group>"; };
+		69C5D98C285F401100EEC32C /* Teko-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-SemiBold.ttf"; sourceTree = "<group>"; };
+		69C5D98D285F401100EEC32C /* Teko-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Regular.ttf"; sourceTree = "<group>"; };
+		69C5D98E285F401100EEC32C /* Teko-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teko-Bold.ttf"; sourceTree = "<group>"; };
+		69C5D994285F431000EEC32C /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
+		69C5D996285F455900EEC32C /* MyRemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRemindersViewController.swift; sourceTree = "<group>"; };
+		69C5D99B285F4A9800EEC32C /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
+		69C5D99D285F56EE00EEC32C /* ReminderCellHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCellHeader.swift; sourceTree = "<group>"; };
+		69C5D9A2285F5C5E00EEC32C /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		69C5D9A4285F5C7A00EEC32C /* MyRemindersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRemindersViewModel.swift; sourceTree = "<group>"; };
+		69C5D9A7285F6BD900EEC32C /* CreateReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReminderViewController.swift; sourceTree = "<group>"; };
+		69F2E7EF28627719008BEA2E /* Calendar+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Ext.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69C5D967285F3C7D00EEC32C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C5D983285F3E1A00EEC32C /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69C5D961285F3C7D00EEC32C = {
+			isa = PBXGroup;
+			children = (
+				69C5D96C285F3C7D00EEC32C /* Reminder */,
+				69C5D96B285F3C7D00EEC32C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69C5D96B285F3C7D00EEC32C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69C5D96A285F3C7D00EEC32C /* Reminder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69C5D96C285F3C7D00EEC32C /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				69C5D9A1285F5C4700EEC32C /* Models */,
+				69C5D988285F3F4900EEC32C /* Resourses */,
+				69C5D985285F3EEF00EEC32C /* Additions */,
+				69C5D984285F3EE800EEC32C /* App */,
+				69C5D978285F3C7E00EEC32C /* LaunchScreen.storyboard */,
+				69C5D998285F45F000EEC32C /* UI */,
+				69C5D97B285F3C7E00EEC32C /* Info.plist */,
+			);
+			path = Reminder;
+			sourceTree = "<group>";
+		};
+		69C5D984285F3EE800EEC32C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				69C5D96D285F3C7D00EEC32C /* AppDelegate.swift */,
+				69C5D96F285F3C7D00EEC32C /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		69C5D985285F3EEF00EEC32C /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				69C5D986285F3F0400EEC32C /* Color+Ext.swift */,
+				69C5D994285F431000EEC32C /* Font+Ext.swift */,
+				69F2E7EF28627719008BEA2E /* Calendar+Ext.swift */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		69C5D988285F3F4900EEC32C /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				69C5D989285F3FE200EEC32C /* Fonts */,
+				69C5D976285F3C7E00EEC32C /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		69C5D989285F3FE200EEC32C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				69C5D98E285F401100EEC32C /* Teko-Bold.ttf */,
+				69C5D98B285F401100EEC32C /* Teko-Light.ttf */,
+				69C5D98A285F401100EEC32C /* Teko-Medium.ttf */,
+				69C5D98D285F401100EEC32C /* Teko-Regular.ttf */,
+				69C5D98C285F401100EEC32C /* Teko-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		69C5D998285F45F000EEC32C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				69C5D9A6285F6BC700EEC32C /* CreateReminder */,
+				69C5D999285F460A00EEC32C /* MyReminders */,
+				69C5D971285F3C7D00EEC32C /* WelcomeViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		69C5D999285F460A00EEC32C /* MyReminders */ = {
+			isa = PBXGroup;
+			children = (
+				69C5D99A285F4A8900EEC32C /* Cells */,
+				69C5D996285F455900EEC32C /* MyRemindersViewController.swift */,
+				69C5D9A4285F5C7A00EEC32C /* MyRemindersViewModel.swift */,
+			);
+			path = MyReminders;
+			sourceTree = "<group>";
+		};
+		69C5D99A285F4A8900EEC32C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				69C5D99B285F4A9800EEC32C /* ReminderCell.swift */,
+				69C5D99D285F56EE00EEC32C /* ReminderCellHeader.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		69C5D9A1285F5C4700EEC32C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69C5D9A2285F5C5E00EEC32C /* Reminder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		69C5D9A6285F6BC700EEC32C /* CreateReminder */ = {
+			isa = PBXGroup;
+			children = (
+				69C5D9A7285F6BD900EEC32C /* CreateReminderViewController.swift */,
+			);
+			path = CreateReminder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69C5D969285F3C7D00EEC32C /* Reminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69C5D97E285F3C7E00EEC32C /* Build configuration list for PBXNativeTarget "Reminder" */;
+			buildPhases = (
+				69C5D966285F3C7D00EEC32C /* Sources */,
+				69C5D967285F3C7D00EEC32C /* Frameworks */,
+				69C5D968285F3C7D00EEC32C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reminder;
+			packageProductDependencies = (
+				69C5D982285F3E1A00EEC32C /* SnapKit */,
+			);
+			productName = Reminder;
+			productReference = 69C5D96A285F3C7D00EEC32C /* Reminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69C5D962285F3C7D00EEC32C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					69C5D969285F3C7D00EEC32C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 69C5D965285F3C7D00EEC32C /* Build configuration list for PBXProject "Reminder" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69C5D961285F3C7D00EEC32C;
+			packageReferences = (
+				69C5D981285F3E1A00EEC32C /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			productRefGroup = 69C5D96B285F3C7D00EEC32C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69C5D969285F3C7D00EEC32C /* Reminder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69C5D968285F3C7D00EEC32C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C5D992285F401100EEC32C /* Teko-Regular.ttf in Resources */,
+				69C5D97A285F3C7E00EEC32C /* LaunchScreen.storyboard in Resources */,
+				69C5D977285F3C7E00EEC32C /* Assets.xcassets in Resources */,
+				69C5D990285F401100EEC32C /* Teko-Light.ttf in Resources */,
+				69C5D991285F401100EEC32C /* Teko-SemiBold.ttf in Resources */,
+				69C5D98F285F401100EEC32C /* Teko-Medium.ttf in Resources */,
+				69C5D993285F401100EEC32C /* Teko-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69C5D966285F3C7D00EEC32C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C5D99E285F56EE00EEC32C /* ReminderCellHeader.swift in Sources */,
+				69C5D99C285F4A9800EEC32C /* ReminderCell.swift in Sources */,
+				69C5D997285F455A00EEC32C /* MyRemindersViewController.swift in Sources */,
+				69C5D972285F3C7D00EEC32C /* WelcomeViewController.swift in Sources */,
+				69C5D987285F3F0400EEC32C /* Color+Ext.swift in Sources */,
+				69C5D96E285F3C7D00EEC32C /* AppDelegate.swift in Sources */,
+				69C5D9A3285F5C5E00EEC32C /* Reminder.swift in Sources */,
+				69F2E7F028627719008BEA2E /* Calendar+Ext.swift in Sources */,
+				69C5D9A5285F5C7A00EEC32C /* MyRemindersViewModel.swift in Sources */,
+				69C5D995285F431000EEC32C /* Font+Ext.swift in Sources */,
+				69C5D9A8285F6BD900EEC32C /* CreateReminderViewController.swift in Sources */,
+				69C5D970285F3C7D00EEC32C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		69C5D978285F3C7E00EEC32C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69C5D979285F3C7E00EEC32C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69C5D97C285F3C7E00EEC32C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69C5D97D285F3C7E00EEC32C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69C5D97F285F3C7E00EEC32C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reminder/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Reminder.Reminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		69C5D980285F3C7E00EEC32C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Reminder/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Reminder.Reminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69C5D965285F3C7D00EEC32C /* Build configuration list for PBXProject "Reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69C5D97C285F3C7E00EEC32C /* Debug */,
+				69C5D97D285F3C7E00EEC32C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69C5D97E285F3C7E00EEC32C /* Build configuration list for PBXNativeTarget "Reminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69C5D97F285F3C7E00EEC32C /* Debug */,
+				69C5D980285F3C7E00EEC32C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		69C5D981285F3E1A00EEC32C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		69C5D982285F3E1A00EEC32C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69C5D981285F3E1A00EEC32C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 69C5D962285F3C7D00EEC32C /* Project object */;
+}
